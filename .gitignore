@@ -1,0 +1,5 @@
+# no documents
+*.pdf
+
+# no TeX sample thesis
+/parhom-templates

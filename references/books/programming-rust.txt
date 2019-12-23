@@ -1,0 +1,1 @@
+Blandy J., Orendorff J. Programming Rust - Sebastopol: O’Reilly Media, 2017. - 985 p.

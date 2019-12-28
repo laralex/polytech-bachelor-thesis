@@ -2,4 +2,6 @@
 *.pdf
 
 # no TeX sample thesis
-/parhom-templates
+/parhom-templates/.git*
+/parhom-templates/LICENSE.txt
+/parhom-templates/README.md

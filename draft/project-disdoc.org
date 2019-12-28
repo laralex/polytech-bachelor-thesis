@@ -1,0 +1,81 @@
+* Generator of buildings
+* Render Engine
+** [#A] 3d models render
+** [#A] Navigation abstraction
+** [#B] Texturing (+ normals, gloss maps)
+** [#B] Transparency, reflections
+** [#B] Lighting
+** [#C] Shading
+** [#C] Skybox
+** [#C] Terrain
+** [#C] Shaders
+* Navigation in visualisation screen (gui --> renderer)
+* 3d Model Exporter
+* Mouse + keyboard events abstraction
+* Dynamic Configuration (has default copy + profile from file)
+** Window parameters
+*** ContextW = 1024
+*** ContextH = 820
+
+** Render parameters
+*** GraphicsApi       = vulkan | opengl
+*** GraphicsBackend   = ue4 | alex
+*** FovH              = 90 | 60 .. 210
+*** FovV              = 120 | 60 .. 210
+*** RenderDistance    = ..
+*** Vsync(fullscreen) = T | F
+*** Fullscreen        = WindowedBorderless | Windowed | Fullscreen
+*** Antialiasing      = 1 | 2 | 4
+*** EnableTexturing   = T | F
+*** EnableReflections = T | F
+*** EnableShadows     = T | F
+*** EnableTransparency= T | F
+*** Skybox            = Day | Sunset | Black | Gray
+*** DebugLines        = T | F
+*** Terrain           = T | F
+
+** Buffers
+*** GenerationHistorySize = 30
+
+** Navigation parameters
+*** CameraMovementSpeed = 100
+*** CameraRotationSpeed = 100
+*** CameraZoomSpeed = 100
+
+** Keybindings
+*** navigational (visualisation screen only)
+**** Camera Movement       = C-LMB + movement
+**** Camera Rotation       = LMB + movement
+**** Camera Zoom           = Mouse Wheel +/-
+*** exporting
+**** Open Export Dialog    = C-p
+*** heneration
+**** Next Generation       = C-e
+**** Prev Generation       = C-q
+*** visual effects
+**** Switch VSync          = M-v
+**** Switch Fullscreen     = M-Enter
+**** Switch Shadows        = M-s
+**** Switch Reflection     = M-r
+**** Switch Lighting       = M-l
+**** Switch Transparency   = M-t
+**** Switch A. Filtering   = M-a
+
+*** debug modes
+**** CANCELLED Switch Texturing      = C-M-t
+**** Switch Wire Triangles = C-M-w
+**** Switch Fill Triangles = C-M-f
+**** Switch Grid           = C-M-g
+**** Switch Debug Lines    = C-M-d
+*** scene
+**** Switch Skybox         = C-b
+**** Switch Terrain        = C-t
+*** control
+**** Switch Force Dialogs Mode = C-M-f
+* GUI
+** Visualisation screen (separate or integral)
+** Current Shortcuts (from keyboard events)
+** Controls (buttons, checkboxes, tables) and their events
+** Open/Save file dialog
+** Message Boxes
+** Menu strip

@@ -1,27 +1,56 @@
-* Generator of buildings
-* Render Engine
-** [#A] 3d models render
-** [#A] Navigation abstraction
-** [#B] Texturing (+ normals, gloss maps)
-** [#B] Transparency, reflections
-** [#B] Lighting
-** [#C] Shading
-** [#C] Skybox
-** [#C] Terrain
-** [#C] Shaders
-* Navigation in visualisation screen (gui --> renderer)
+* Procedural Mesh Generators
+* Rendering
+Via Unreal Engine 4
+** Objects to render
+*** Meshes
+**** Building from OSC
+*** Texturers (+ normals, gloss maps)
+**** Solid
+**** Transparent
+*** Sky + light
+**** Sphere collision
+*** Landscape
+**** TODO landscape bounding mesh
+**** Details
+     - Roads
+     - Hills
+     - Proper displacement texturing
+*** Shadows
+** Shaders
+** UI
+*** Icons
+*** Mouse
+*** Controls
+** Game Control
+*** Keybindings
+*** Events
+*** Initialization
+** User’s pawn
+* Navigation
+Moving camera around the scene. Should be either on rendering side or
+preferrably on GUI side with sending messages to rendering
 * 3d Model Exporter
+** STL
+** OBJ
 * Mouse + keyboard events abstraction
 * Dynamic Configuration (has default copy + profile from file)
 ** Window parameters
 *** ContextW = 1024
 *** ContextH = 820
 
-** Render parameters
-*** GraphicsApi       = vulkan | opengl
-*** GraphicsBackend   = ue4 | alex
-*** FovH              = 90 | 60 .. 210
-*** FovV              = 120 | 60 .. 210
+** Visual parameters
+
+*** Render
+**** GraphicsApi       = vulkan | opengl
+**** GraphicsBackend   = ue4 | alex
+**** FovH              = 90 | 60 .. 210
+**** FovV              = 120 | 60 .. 210
+*** Debug
+**** DebugLines        = T | F
+**** Show XY plane     = T | F
+*** Scene
+**** Skybox            = Day | Sunset | Black | Gray
+**** Terrain           = T | F
 *** RenderDistance    = ..
 *** Vsync(fullscreen) = T | F
 *** Fullscreen        = WindowedBorderless | Windowed | Fullscreen
@@ -30,9 +59,7 @@
 *** EnableReflections = T | F
 *** EnableShadows     = T | F
 *** EnableTransparency= T | F
-*** Skybox            = Day | Sunset | Black | Gray
-*** DebugLines        = T | F
-*** Terrain           = T | F
+
 
 ** Buffers
 *** GenerationHistorySize = 30
